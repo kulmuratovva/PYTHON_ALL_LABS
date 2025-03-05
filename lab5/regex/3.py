@@ -1,7 +1,7 @@
 import re
 
 txt = input()
-x = re.search(r"[a-z]+(_[a-z]+)+$", txt)
+x = re.search(r"^[a-z]+(_[a-z]+)+$", txt)
 
 if x:
     print("Match!")
